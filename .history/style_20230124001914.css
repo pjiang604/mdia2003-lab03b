@@ -1,0 +1,88 @@
+div {
+    outline: 1px solid red;
+    min-height: 1rem;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Ubuntu, sans-serif;
+    font-weight:300;
+}
+
+.row {
+    display:grid;
+    row-gap: 1rem;
+}
+
+.col {
+    position:relative;
+    background-color: orange;
+}
+
+
+/** small/mobile version */
+@media screen and (max-width:39.9375em) {
+    .m-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/** medium and up. applicable for both tablet and mobile version */
+@media screen and (max-width:40em) {
+    .row {
+        max-width: 70em;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .m-col-2 {
+        grid-template-columns: 4fr;
+    }
+
+    .m-col-3 {
+        grid-template-columns: repeat(3fr, 1);
+    }
+
+    .m-col-5 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .m-col-6 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/** medium only */
+@media screen and (min-width:40em) and (max-width:63.9375em) {
+    
+}
+
+/** large only */
+@media screen and (min-width:64em) {
+    .l-col-2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .l-col-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .l-col-4 {
+        grid-template-columns: repeat(3, 2fr);
+    }
+    
+    .l-col-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .l-col-6 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
