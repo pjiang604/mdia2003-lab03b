@@ -103,15 +103,6 @@ h6 {
     .footer-grid{
         display: none;
     }
-
-    .hidden-photo {
-        display:content;
-        background-color: orange;
-    }
-
-    .accordion {
-        display:none;
-    }
 }
 
 /** medium and up. applicable for both tablet and mobile version */
@@ -124,7 +115,7 @@ h6 {
         display: contents;
     }
 
-    .hidden-photo {
+    .col-1 {
         display: content;
         background-color: orange;
     }
@@ -177,14 +168,9 @@ h6 {
     .m-col-1-1{
         grid-template-columns: 1fr
     }
-    
-    .m-col-1-2 {
-        grid-template-columns: repeat(1, 2fr);
-    }
 
-    .hidden-photo {
+    .col-1 {
         display:content;
-        background-color: orange;
     }
 
 }
@@ -214,13 +200,13 @@ h6 {
         grid-template-columns: 1fr 4fr;
     }
 
-    .l-col-3-1{
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
+
+    .l-col-5-1{
+        grid-template-columns: repeat(5, 1fr)
     }
 
-    .l-col-2-1 {
-        grid-template-columns: repeat(2, 1fr);
+    .l-col-3-1{
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
     }
 
@@ -232,7 +218,7 @@ h6 {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .hidden-photo {
+    .col-1 {
         display:none;
     }
 

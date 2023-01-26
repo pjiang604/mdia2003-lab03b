@@ -232,7 +232,7 @@ h6 {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .hidden-photo {
+    .col-1 {
         display:none;
     }
 
