@@ -434,10 +434,7 @@ footer p {
 
 
     .social-img {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin:0;
+        width: 3em;
     }
 
     .hamburger {
@@ -470,6 +467,7 @@ footer p {
     .s-col-5-1 {
         grid-template-columns: 5fr 1fr;
         display: contents;
+        grid-template-rows: 1fr;
     }
 
     .s-col-2-1 {
@@ -501,6 +499,10 @@ footer p {
         width: 8em;
         height: 6em;
         object-fit: contain;
+    }
+
+    .footer {
+        padding-left:0;
     }
 
     .footer-content {

@@ -235,26 +235,6 @@ footer {
     padding: 2em 11em 0em;
 }
 
-.flickr-photos {
-    border-bottom: 0.2em solid #f8ba0d;
-    padding-bottom: 0.75em;
-}
-
-.m-row-title {
-    border-bottom: 0.2em solid #21c183;
-    padding-bottom: 0.75em;
-}
-
-.newsletter-title {
-    border-bottom: 0.2em solid #1bade6;
-    padding-bottom: 0.75em;
-}
-
-.recent-tweets {
-    border-bottom: 0.2em solid #dc6161;
-    padding-bottom: 0.75em;
-}
-
 .footer-content {
     display: flex;
     gap: 4em;
@@ -267,7 +247,7 @@ footer p {
 .headshot {
     display: flex;
     justify-content: center;
-    padding-top: 1em;
+    padding-top:1em;
 }
 
 .author-img {
@@ -275,11 +255,7 @@ footer p {
     height: 5em;
     object-fit: cover;
     border-radius: 100%;
-}
 
-.news-btn:hover {
-    cursor: pointer;
-    background-color: white;
 }
 
 .flickr-img {
@@ -291,7 +267,6 @@ footer p {
 .social-img {
     width: 2em;
 }
-
 
 .tweet-img {
     width: 100%;
@@ -306,13 +281,9 @@ footer p {
 #email {
     background-color: var(--red);
     border: none;
-    height: 2.2em;
+    height:2.2em;
     color: white;
     width: 14.05em;
-}
-
-::placeholder {
-    color: white;
 }
 
 .news-btn {
@@ -369,33 +340,14 @@ footer p {
 /** small/mobile version */
 @media screen and (max-width:29.9375em) {
     .about {
-        display: grid;
-        grid-template-rows: auto;
-        width: 100%;
+        display:flex;
+        height:15em;
+        width:100%;
     }
-
-    h4 {
-        margin-bottom: 0;
-    }
-
 
     .nav {
         display: flex;
 
-    }
-
-    .logo {
-        width: 100%;
-        margin-left: 2em;
-    }
-
-    .headshot {
-        gap: 0;
-    }
-
-    .author-img {
-        height: 7.5em;
-        width: 7.5em;
     }
 
     .services-section,
@@ -404,6 +356,7 @@ footer p {
         margin-left: 5em;
         margin-right: 5em;
     }
+
 
     .row {
         max-width: 70em;
@@ -422,22 +375,15 @@ footer p {
         display: none;
     }
 
-    .about-socials {
-        width: 100%;
-    }
-
     .live-social {
-        display: grid;
-        grid-template-rows: auto;
-        justify-content: center;
+        justify-content:center;
+        position:relative;
+        margin-right:3em;
     }
 
 
     .social-img {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin:0;
+        width: 3em;
     }
 
     .hamburger {
@@ -468,12 +414,15 @@ footer p {
     }
 
     .s-col-5-1 {
-        grid-template-columns: 5fr 1fr;
-        display: contents;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .s-col-2-1 {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        display: none;
     }
 
     .hidden-photo {
@@ -490,11 +439,6 @@ footer p {
 @media screen and (min-width:30em) and (max-width:63.9375em) {
     .tagLine {
         margin: 4em 6em;
-    }
-
-    .logo {
-        width: 80%;
-        margin-left: 2em;
     }
 
     .comp-logo {
@@ -526,7 +470,7 @@ footer p {
     .companies {
         display: flex;
     }
-
+    
     .comp-logo {
         object-fit: contain;
     }

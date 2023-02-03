@@ -437,7 +437,6 @@ footer p {
         display:flex;
         justify-content:center;
         align-items:center;
-        margin:0;
     }
 
     .hamburger {
@@ -468,8 +467,9 @@ footer p {
     }
 
     .s-col-5-1 {
-        grid-template-columns: 5fr 1fr;
+        grid-template-columns: 1fr 5fr;
         display: contents;
+        grid-template-rows: 1fr;
     }
 
     .s-col-2-1 {
