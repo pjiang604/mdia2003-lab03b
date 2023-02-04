@@ -12,43 +12,48 @@
 
 <body>
     <nav>
-        <div class="nav row l-col-6-1 m-col-6-1 s-col-2-2">
-            <div class="logoColumn">
-                <img src="img/icons/logo.png" alt="logo" class="logo">
+        <img src="img/icons/logo.png" alt="logo" class="logo">
+        <a href="/">
+            <div class="navTab homeTab">
+                <img src="img/icons/home.png" class="navBarIcons">
+                <h5>Home</h5>
             </div>
-            <a href="/">
-                <div class="col navTab homeTab">
-                    <img src="img/icons/home.png" class="navBarIcons">
-                    <h5>Home</h5>
-                </div>
-            </a>
-            <a href="/">
-                <div class="col navTab pagesTab">
-                    <img src="img/icons/pages.png" class="navBarIcons">
-                    <h5> Pages</h5>
-                </div>
-            </a>
-            <a href="/">
-                <div class="col navTab blogTab">
-                    <img src="img/icons/blog.png" class="navBarIcons">
-                    <h5>Blog</h5>
-                </div>
-            </a>
-            <a href="/">
-                <div class="col navTab portfolioTab">
-                    <img src="img/icons/portfolio.png" class="navBarIcons">
-                    <h5>Portfolio</h5>
-                </div>
-            </a>
-            <a href="/">
-                <div class="col navTab emailTab">
-                    <img src="img/icons/email.png" class="navBarIcons">
-                    <h5>Email</h5>
-                </div>
-            </a>
-            <div class="col hamburger">
-                <p>[HAM MENU]</p>
+        </a>
+        <a href="/">
+            <div class="navTab pagesTab">
+                <img src="img/icons/pages.png" class="navBarIcons">
+                <h5> Pages</h5>
             </div>
+        </a>
+        <a href="/">
+            <div class="navTab blogTab">
+                <img src="img/icons/blog.png" class="navBarIcons">
+                <h5>Blog</h5>
+            </div>
+        </a>
+        <a href="/">
+            <div class="navTab portfolioTab">
+                <img src="img/icons/portfolio.png" class="navBarIcons">
+                <h5>Portfolio</h5>
+            </div>
+        </a>
+        <a href="/">
+            <div class="navTab emailTab">
+                <img src="img/icons/email.png" class="navBarIcons">
+                <h5>Email</h5>
+            </div>
+        </a>
+        <div class="hamburger">
+            <img onclick="toggleMenu()" src="img/icons/hamburg.png" alt="" class="ham-img">
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Portfolio</li>
+                <li>Email</li>
+            </ul>
         </div>
     </nav>
 
@@ -63,12 +68,13 @@
         </div>
 
         <div class="services-section">
-            <div class="col headerMargin">
+            <div class="headerMargin">
                 <h2>Things That We Do</h2>
                 <p>Ask what we can do for you</p>
             </div>
-            <div class="row l-col-4-1 m-col-2-1 s-col-1-4">
-                <div class="col card">
+
+            <div class="serviceCard row m-col-2-1">
+                <div class="card col">
                     <img src="img/icons/lightbulb.PNG" class="serviceImg" alt="">
                     <h3>Web Solutions</h3>
                     <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly
@@ -76,16 +82,15 @@
                         clients to fulfil their design needs. Whether you need to create a brand from scratch, including
                         marketing materials.</p>
                 </div>
-                <div class="col card">
+                <div class="card col">
                     <img src="img/icons/photo.PNG" class="serviceImg" alt="">
                     <h3>Photography</h3>
                     <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly
                         with
                         clients to fulfil their design needs. Whether you need to create a brand from scratch, including
                         marketing materials.</p>
-
                 </div>
-                <div class="col card">
+                <div class="card col">
                     <img src="img/icons/gears.PNG" class="serviceImg" alt="">
                     <h3>Web Development</h3>
                     <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly
@@ -93,7 +98,7 @@
                         clients to fulfil their design needs. Whether you need to create a brand from scratch, including
                         marketing materials.</p>
                 </div>
-                <div class="col card">
+                <div class="card col">
                     <img src="img/icons/pencil.PNG" class="serviceImg" alt="">
                     <h3>Web Design</h3>
                     <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly
@@ -104,11 +109,11 @@
             </div>
         </div>
         <div class="recent-news headerMargin">
-            <div class="col">
+            <div class="headerMargin">
                 <h2>What's up Lately?</h2>
                 <p>Read up on our latest work</p>
             </div>
-            <div class="row l-col-3-1 m-col-2-1 s-col-1-4">
+            <div class="recent-news-posts row m-col-2-1">
                 <div class="col">
                     <img src="img/content/pug.jpeg" class="image-post" alt="">
                 </div>
@@ -118,13 +123,16 @@
                 <div class="col">
                     <img src="img/content/pug.jpeg" class="image-post" alt="">
                 </div>
-                <div class="hidden-photo">
-                    <img src="img/content/cat.jpeg" class="image-post" alt="">
+                <div class="col">
+                    <img src="img/content/cat.jpeg" class="image-post hidden-photo" alt="">
                 </div>
             </div>
         </div>
-        <div class="latest-projects-section headerMargin">
-            <div class="col">
+        </div>
+
+
+        <div class="latest-projects-section">
+            <div class="headerMargin">
                 <h2>Our Latest Projects</h2>
                 <p>Client happy? We are happy.</p>
             </div>
@@ -150,44 +158,32 @@
             </div>
         </div>
 
-        <div class="misc-section col headerMargin">
+        <div class="misc-section headerMargin">
             <h2>Things of Above</h2>
             <p>Misc stuff we could not put anyplace else</p>
         </div>
-        <div class="row accordion l-col-2-1 m-col-1-2 s-col-1-1">
-            <div class="col">
+        <div class="accordion-section">
+            <div class="accordion">
                 <p>[ACCORDION HERE]</p>
             </div>
-            <div class="col">
+            <div class="tabs">
                 <p>[TABS HERE]</p>
             </div>
         </div>
 
-
-
-        <div class="row companies l-col-5-1 m-col-5-1">
-            <div class="company-col">
-                <img src="img/logos/netbeanslogo.png" class="comp-logo" alt="">
-            </div>
-            <div class="company-col">
-                <img src="img/logos/krita.png" class="comp-logo" alt="">
-            </div>
-            <div class="company-col">
-                <img src="img/logos/scirra.png" class="comp-logo" alt="">
-            </div>
-            <div class="company-col">
-                <img src="img/logos/blender.png" class="comp-logo" alt="">
-            </div>
-            <div class="company-col">
-                <img src="img/logos/inkscape.png" class="comp-logo" alt="">
-            </div>
+        <div class="companies">
+            <img src="img/logos/netbeanslogo.png" class="comp-logo" alt="">
+            <img src="img/logos/krita.png" class="comp-logo" alt="">
+            <img src="img/logos/scirra.png" class="comp-logo" alt="">
+            <img src="img/logos/blender.png" class="comp-logo" alt="">
+            <img src="img/logos/inkscape.png" class="comp-logo" alt="">
         </div>
     </main>
 
     <footer>
 
-        <div class="row l-col-2-4 m-col-2-4 s-col-2-1 author">
-            <div class="headshot col">
+        <div class="author">
+            <div class="headshot">
                 <img src="img/content/profilepic.jpeg" class="author-img" alt="">
             </div>
             <div class="about">
@@ -199,13 +195,13 @@
             </div>
         </div>
 
-        <div class="footer-content row l-footer-grid m-row m-footer-grid">
-            <div class="col about-socials">
-                <h3 class="m-row-title">About Us</h3>
-                <p class="m-row ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo! Deserunt quo
+        <div class="footer-content row m-col-2-1 s-col-1-1">
+            <div class="about-socials col">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo! Deserunt quo
                     nostrum quaerat, cum dolores aut. Recusandae voluptates, nisi a explicabo, in autem vitae eius iste
                     temporibus dolorem corporis.</p>
-                <div class="row social-icons l-col-5-1 m-col-5-1 s-col-5-1">
+                <div class="social-icons">
                     <img src="img/icons/facebook.png" class="social-img" alt="">
                     <img src="img/icons/g+.png" class="social-img" alt="">
                     <img src="img/icons/twitter.png" class="social-img" alt="">
@@ -214,61 +210,37 @@
                 </div>
             </div>
 
-            <div class="col flickr">
-                <h3 class="flickr-photos">Flickr Photos</h3>
-                <div class="row l-col-3-1 m-col-3-1">
-                    <div class="col">
-                        <img src="img/content/cat1.jpeg" class="flickr-img" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/content/cat2.jpeg" class="flickr-img" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/content/cat3.jpeg" class="flickr-img" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/content/cat2.jpeg" class="flickr-img" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/content/cat3.jpeg" class="flickr-img" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/content/cat1.jpeg" class="flickr-img" alt="">
-                    </div>
-                </div>
+            <div class="flickr col">
+                <h3>Flickr Photos</h3>
+                <img src="img/content/cat1.jpeg" class="flickr-img" alt="">
+                <img src="img/content/cat2.jpeg" class="flickr-img" alt="">
+                <img src="img/content/cat3.jpeg" class="flickr-img" alt="">
+                <img src="img/content/cat2.jpeg" class="flickr-img" alt="">
+                <img src="img/content/cat3.jpeg" class="flickr-img" alt="">
+                <img src="img/content/cat1.jpeg" class="flickr-img" alt="">
             </div>
 
-            <div class="row live-social m-col">
-                <div>
-                    <h3 class="recent-tweets">Recent Tweets</h3>
-                </div>
-                <div>
-                    <img src="img/content/tweet.webp" class="tweet-img" alt="">
-                </div>
-                <div>
-                    <img src="img/content/tweet.webp" class="tweet-img" alt="">
-                </div>
+            <div class="live-social col">
+                <h3>Recent Tweets</h3>
+                <img src="img/content/tweet.webp" class="tweet-img" alt="">
+                <img src="img/content/tweet.webp" class="tweet-img" alt="">
             </div>
 
-            <div class="col newsletter">
-                <div class="row m-col-1-1">
-                    <h3 class="newsletter-title">Newsletter</h3>
-                    <div class="col">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, iusto provident labore quos
-                            ipsa
-                            voluptas.</p>
-                    </div>
-                    <div class="col form">
-                        <form action="">
-                            <input type="email" id="email" placeholder="Enter your email...">
-                            <button type="submit" class="news-btn"><img src="img/icons/paper-airplane.png"
-                                    class="airplane-img" alt=""></button>
-                        </form>
-                    </div>
+            <div class="newsletter col">
+                <h3>Newsletter</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat explicabo pariatur sit voluptate
+                    quos recusandae minima magnam et cupiditate aut magni exercitationem molestiae ipsa ut aliquam ea
+                    nostrum, omnis praesentium.</p>
 
-                </div>
+                <form>
+                    <input type="email" id="email" placeholder="Enter your email...">
+                    <button type="submit" class="news-btn"><img src="img/icons/paper-airplane.png" class="airplane-img"
+                            alt=""></button>
+                </form>
+
             </div>
         </div>
+
 
         <div class="footer-decor">
             <div class="decor decor-green"></div>
@@ -280,8 +252,8 @@
 
     </footer>
 
+    <script type="text/javascript" src="/menu.js"></script>
+
 </body>
-
-
 
 </html>
