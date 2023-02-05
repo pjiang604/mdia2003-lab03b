@@ -103,7 +103,6 @@ nav {
     justify-content: center;
     align-items: center;
     width: 3em;
-    margin:auto;
     height: 3em;
 }
 
@@ -198,7 +197,7 @@ nav {
     padding-bottom: 3em;
     border-bottom: 1px solid lightgray;
     position: relative;
-    justify-content:center;
+
 }
 
 .recent-news-posts::after {
@@ -560,7 +559,11 @@ form {
         display: flex;
         gap: 0.5em;
         align-items:center;
-        margin-top:0.2em;
+    }
+
+    .social-icons img {
+        width:20px;
+        height:20px;
     }
 
     .footer-content {
@@ -579,7 +582,6 @@ form {
         width: 15em;
         height: 5em;
         object-fit: cover;
-        margin:auto;
     }
 
     footer {

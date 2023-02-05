@@ -103,7 +103,6 @@ nav {
     justify-content: center;
     align-items: center;
     width: 3em;
-    margin:auto;
     height: 3em;
 }
 
@@ -198,7 +197,7 @@ nav {
     padding-bottom: 3em;
     border-bottom: 1px solid lightgray;
     position: relative;
-    justify-content:center;
+
 }
 
 .recent-news-posts::after {
@@ -640,6 +639,10 @@ form {
     .live-social,
     .newsletter {
         width: 100%;
+    }
+
+    .flickr{
+        align-items:center;
     }
 
     .decor {
