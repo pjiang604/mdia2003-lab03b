@@ -5,25 +5,23 @@
     --lightBlue: #1691bd;
     --darkBlue: #166ba2;
     --navy: #16242f;
+    --grey: #808080;
+    --white: white;
 
     --padding-d: 0 20vw;
     --gap-d: 2em;
 
 }
 
-
-
 html {
     height: 100vh;
     width: 100vw;
-
 }
 
 body {
     width: 100vw;
     margin: 0;
 }
-
 
 .headerMargin {
     margin: 3em 0;
@@ -43,7 +41,7 @@ main {
 
 p {
     font-size: 12px;
-    color: grey;
+    color: var(--grey);
     line-height: 1.5em;
 }
 
@@ -71,6 +69,10 @@ nav {
     display: none;
 }
 
+.test{
+    position: relative;
+}
+
 .menu {
     display: none;
 }
@@ -92,7 +94,7 @@ nav {
 }
 
 .navTab>h5 {
-    color: white;
+    color: var(--white);
     position: absolute;
     padding: 1em;
     margin: 0;
@@ -103,7 +105,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 3em;
-    margin:auto;
+    margin: auto;
     height: 3em;
 }
 
@@ -198,7 +200,7 @@ nav {
     padding-bottom: 3em;
     border-bottom: 1px solid lightgray;
     position: relative;
-    justify-content:center;
+    justify-content: center;
 }
 
 .recent-news-posts::after {
@@ -206,7 +208,8 @@ nav {
     display: block;
     position: absolute;
     width: 31%;
-    top: 14.88em;
+    top: 15.2em;
+    left: 0;
     height: 0;
     border-top: 4px solid var(--lightBlue);
 }
@@ -221,10 +224,7 @@ nav {
 /*Latest Projects*/
 .latest-projects-posts {
     display: flex;
-
 }
-
-
 
 /*Accordion*/
 .accordion-section {
@@ -262,7 +262,7 @@ nav {
 
 footer {
     background: var(--navy);
-    color: white;
+    color: var(--white);
     font-family: Ubuntu, sans-serif;
     font-weight: 300;
     text-decoration: none;
@@ -360,7 +360,7 @@ footer {
 }
 
 footer p {
-    color: white;
+    color: var(--white);
 }
 
 .headshot {
@@ -383,7 +383,7 @@ footer p {
 
 .news-btn:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .flickr-img {
@@ -418,14 +418,14 @@ form {
     background-color: var(--red);
     border: none;
     height: 2.2em;
-    color: white;
+    color: var(--white);
     padding: 0.25em;
     flex-grow: 1;
 
 }
 
 ::placeholder {
-    color: white;
+    color: var(--white);
 }
 
 .news-btn {
@@ -499,19 +499,17 @@ form {
         margin-bottom: 0;
     }
 
-
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
-    .serviceCard{
+    .serviceCard {
         flex-direction: column;
     }
 
-    .recent-news-posts{
+    .recent-news-posts {
         flex-direction: column;
     }
 
@@ -554,13 +552,12 @@ form {
     .social-img {
         width: 3em;
     }
-    
+
 
     .social-icons {
         display: flex;
         gap: 0.5em;
-        align-items:center;
-        margin-top:0.2em;
+        margin-top: 0.2em;
     }
 
     .footer-content {
@@ -579,7 +576,7 @@ form {
         width: 15em;
         height: 5em;
         object-fit: cover;
-        margin:auto;
+        margin: auto;
     }
 
     footer {
@@ -612,11 +609,11 @@ form {
         width: 100%;
     }
 
-    .serviceCard{
-        display:grid;
+    .serviceCard {
+        display: grid;
     }
 
-    .recent-news-posts{
+    .recent-news-posts {
         display: grid;
     }
 
@@ -625,11 +622,11 @@ form {
         top: 29.35em;
     }
 
-    .accordion-section{
+    .accordion-section {
         flex-direction: column;
         gap: 1em;
     }
-    
+
 
     .footer-content {
         display: grid;
@@ -657,8 +654,8 @@ form {
 
     .comp-logo {
         object-fit: contain;
-        height:2em;
-        margin-top:0.25em;
+        height: 2em;
+        margin-top: 0.25em;
 
     }
 
