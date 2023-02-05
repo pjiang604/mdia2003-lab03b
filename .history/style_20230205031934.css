@@ -198,7 +198,8 @@ nav {
     padding-bottom: 3em;
     border-bottom: 1px solid lightgray;
     position: relative;
-    justify-content:center;
+    margin:auto;
+
 }
 
 .recent-news-posts::after {
